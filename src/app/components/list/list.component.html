@@ -1,0 +1,11 @@
+<div class="list_container">
+  <div class="list_btn_register">
+    <button [routerLink]="['/register-movie']">Registrar filme</button>
+  </div>
+  <div class="card_container">
+    @for (movie of movies; track movie.id) {
+      <app-card [movie]="movie">/</app-card>
+  } 
+  </div>
+   
+   

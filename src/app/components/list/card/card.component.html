@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card_content">
+    <h2>{{ movie().name }}</h2>
+    <h3 class="card_description">
+      {{ movie().description }}
+    </h3>
+    <div class="card_btn">
+      <button>Editar filme</button>
+      <button>Ver sessões</button>
+    </div>
+  </div>
+  <div class="card_img">
+    <img src="{{ movie().image }}" alt="img_card" />
+    <h3>{{ movie().release_date }}</h3>
+  </div>
+</div>
